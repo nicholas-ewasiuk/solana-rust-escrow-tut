@@ -13,6 +13,9 @@ pub enum EscrowError {
     // Expected amount mismatch
     #[error("Expected Amount Mismatch")]
     ExpectedAmountMismatch,
+    // Amount overflow
+    #[error("Amount Overflow")]
+    AmountOverflow,
 }
 
 impl From<EscrowError> for ProgramError {
